@@ -37,6 +37,7 @@ backend/app/__pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
+backend/users.json
 
 
 # ========================
