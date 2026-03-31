@@ -1,0 +1,18 @@
+cv-inference-platform/
+├── frontend/               # 前端工程 (React 18 + Vite + TS)
+│   ├── src/
+│   │   ├── components/     # UI 组件 (Canvas画布, 表格等)
+│   │   ├── hooks/          # 自定义 Hooks (SSE处理, 状态管理)
+│   │   ├── services/       # API 请求封装
+│   │   └── pages/          # 页面级视图 (Login, Inference, Results)
+│   └── package.json
+├── backend/                # 后端工程 (FastAPI)
+│   ├── app/
+│   │   ├── api/            # 路由定义 (auth, inference, export)
+│   │   ├── core/           # 核心配置与全局依赖
+│   │   ├── services/       # 业务逻辑 (调用 C++ 库, 文件处理)
+│   |   └── main.py
+│   ├── cpp_engine/                # C++ TensorRT 推理引擎
+│   |   ├── inference_engine.cpp
+│   |   └── CMakeLists.txt
+│   └── requirements.txt

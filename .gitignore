@@ -1,0 +1,83 @@
+# ========================
+# 1. 核心拦截：模型与权重 (极大！)
+# ========================
+*.onnx
+*.pt
+*.pth
+*.trt
+*.engine
+backend/models/
+backend/configs/*.json
+# 如果你有单独存放模型的文件夹，把它的名字写在上面
+
+# ========================
+# 2. 核心拦截：测试图片与导出数据
+# ========================
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.zip
+backend/uploads/
+
+# ========================
+# 3. 前端依赖与构建产物
+# ========================c
+frontend/node_modules/
+frontend/dist/
+frontend/.npm/
+
+# ========================
+# 4. 后端环境与缓存
+# ========================
+backend/venv/
+backend/env/
+backend/__pycache__/
+backend/app/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+
+# ========================
+# 5. 系统缓存与 IDE 配置
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# ========================
+# 6. 密钥与机密配置 (防泄漏)
+# ========================
+.env
+.env.*
+*.pem
+*.deb
+
+# ========================
+# 7. C++ 引擎与 CMake 编译产物
+# ========================
+backend/cpp_engine/build/
+
+# 拦截动态/静态链接库 (跨平台)
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+
+# 拦截可执行文件
+*.out
+*.exe
+*.app
+
+# 拦截 CMake 自动生成的缓存和配置
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
